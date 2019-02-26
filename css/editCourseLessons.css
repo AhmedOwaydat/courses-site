@@ -1,0 +1,73 @@
+.addLessons{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.addLessons .page-head{
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Noto Serif";
+}
+
+.addLessons .form-group {
+    font-family: "Noto Serif";
+}
+
+.addLessons .form-group div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.addLessons .course-content input,
+.addLessons .course-content label{
+    margin-top: 10px;
+}
+
+.addLessons ::-webkit-file-upload-button{
+    height: 30px;
+    width:120px;
+    max-width: 120px;
+    border: none;
+    margin-top: -4px;
+    padding-right: 125px;
+    background: transparent;    
+}
+
+.addLessons #videosPath{
+   position: absolute;
+   width: 135px;
+   max-width: 135px;
+}
+
+.addLessons .btn-info{
+    width: 135px;
+}
+
+.addLessons .add-new-course{
+    width: 150px;
+    max-width: 150px;
+}
+
+.addLessons .playList{
+    padding: 30px 10px 10px;
+}
+
+.addLessons h3{
+    font-family: "Noto Serif";
+    color: white;
+}
+
+.addLessons .content .lesson{
+    list-style: none;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+    color: white;
+}
+
+.addLessons .content .lesson .lesson-videos{
+    font-size: 19px;
+    font-weight: normal;
+    list-style: square;
+}

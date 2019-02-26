@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add Course Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--font awesom CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/addCourseLessons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Site Name
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="serch-form form-inline mx-auto my-2 my-lg-0">
+                    <input class="search form-control mr-sm-2" type="search" placeholder="Search for course" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="signedIn form-inline my-2 my-lg-0">
+                    <form class="user-page-redirect form-inline my-2 my-lg-0">
+                        <a href="instructorHome.html">
+                            <img class="user-Image img-thumbnail img-fluid" src="images/user img.png" alt="User Image"/>
+                            <span class="user-Name">User Name</span>
+                        </a>
+                    </form>
+                    <form class="edit form-inline my-2 my-lg-0">
+                        <a href="editUserProfile.html">
+                            <button class="edit-user-profile btn btn-success my-2 my-sm-0" type="button">Edit Profile</button>
+                        </a>
+                    </form>
+                    <form class="signin-redirect form-inline my-2 my-lg-0">
+                        <a href="logIn.html">
+                            <button class="btn btn-danger my-2 my-sm-0" type="button">Log out</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="addLessons" id="addLessons">
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto col-xl-6 col-lg-6 col-md-8 col-12">
+                        <div class="back-div">
+                            <h2 class="page-head text-center mx-auto">ADD Course Lessons</h2>
+                            <form class="form col-12">
+                                <div class="form-group">
+                                    <div class="course-content">
+                                        <!--<div class="addlesson">
+                                            <input class="form-control" type="text" placeholder="Lesson Name">
+                                            <label id="videosPath" class="btn btn-primary" for="choose-course-videos">Choose Videos</label>
+                                            <input id="choose-course-videos" class="form-control" type="file" name="course-videos" accept="video/mp4,video/x-m4v,video/*" multiple>
+                                            <div class="text-center">
+                                                <input class="lesson-added btn btn-success" type="button" value="Done">
+                                                <input class="lesson-canceled btn btn-warning" type="button" value="Cancel">
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <input class="addNewLesson btn btn-info" type="button" value="Add Lesson">
+                                </div>
+                                <div class="form-group text-center">
+                                    <button class="add-new-course btn btn-success" type="submit">ADD</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-warning" type="button">back</button>
+                                    <a href="instructorHome.html">
+                                        <button class="btn btn-danger" type="button">Cancel</button>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto col-xl-6 col-lg-6 col-md-8 col-12">
+                        <div class="playList back-div">
+                            <p>
+                                <h3>Course Content</h3>
+                                <ul class="content">
+                                    <li class="lesson">
+                                        lesson1:
+                                        <ul class="lesson-videos">
+                                            <li>video1</li>
+                                            <li>video2</li>
+                                        </ul>
+                                    </li>
+                                    <li class="lesson">
+                                        lesson2:
+                                        <ul class="lesson-videos">
+                                            <li>video1</li>
+                                            <li>video2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/addCourseLessons.js"></script>
+
+</body>
+</html>

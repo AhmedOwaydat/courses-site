@@ -1,0 +1,42 @@
+.editCourse{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.back-div{
+    background-color: rgba(17, 17, 17, 0.5);
+    padding: 30px 50px 10px;
+    border-radius: 20px;
+}
+
+.page-head{
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Noto Serif";
+}
+
+.editCourse .form-group {
+    font-family: "Noto Serif";
+}
+
+.editCourse ::-webkit-file-upload-button{
+    height: 30px;
+    width:120px;
+    max-width: 120px;
+    border: none;
+    margin-top: -4px;
+    padding-right: 125px;
+    background: transparent;    
+}
+
+.editCourse #imagePath,
+.editCourse #videosPath{
+   position: absolute;
+   width: 135px;
+}
+
+.editCourse .btn-success{
+    width: 150px;
+    max-width: 150px;
+}

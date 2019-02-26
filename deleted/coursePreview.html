@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Course Preview Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--font awesom CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Playfair font-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+   
+    <!-- my css -->
+    <link rel="stylesheet" href="css/coursePreview.css" />
+    <link rel="stylesheet" href="css/videoPlayer.css">
+    
+</head>
+<body>
+    
+    <div class="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Site Name
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="serch-form form-inline mx-auto my-2 my-lg-0">
+                    <input class="search form-control mr-sm-2" type="search" placeholder="Search for course" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="not-signedIn form-inline my-2 my-lg-0">
+                    <form class="login-redirect form-inline my-2 my-lg-0">
+                        <a href="logIn.html">
+                            <button class="btn btn-success my-2 my-sm-0" type="button">Login</button>
+                        </a>
+                    </form>
+                    <form class="signup-redirect form-inline my-2 my-lg-0">
+                        <a href="register.html">
+                            <button class="btn btn-danger my-2 my-sm-0" type="button">Sign up</button>
+                        </a>
+                    </form>
+                </div>
+                <div class="signedIn hidden form-inline my-2 my-lg-0">
+                    <form class="user-page-redirect form-inline my-2 my-lg-0">
+                        <a href="home.html">
+                            <img class="user-Image img-thumbnail img-fluid" src="images/user img.png" alt="User Image"/>
+                            <span class="user-Name">User Name</span>
+                        </a>
+                    </form>
+                    <form class="signin-redirect form-inline my-2 my-lg-0">
+                        <a href="logIn.html">
+                            <button class="btn btn-danger my-2 my-sm-0" type="button">Log out</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="player">
+            <div class="player-container container">
+                <div class="row">
+                    <div class="musicList col-xl-4 col-lg-4 col-md-12 col-sm-12 order-2">
+                        <div class="container">
+                            <h1 class="text-center"><span class="mainColor course-Name">Course Name</span></h1>
+                            <div class="list">
+                                <ul>
+                                    <li class="active" url="vids/1.mp4"><span class="number">01 </span>1<span class="time">04:41</span></li>
+                                    <li url="vids/2.mp4"><span class="number">02 </span>2<span class="time">05:19</span></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+<!--
+                    <div class="musicPlayer mx-auto col-xl-8 col-lg-8 col-md-12 col-12 order-1">
+                        <video id="myPlayer" src="" ></video>
+                        <div class="overlay hidden col-xl-12 col-lg-12 col-md-12 col-12">
+                                <div class="progress" id="seekBar"><span class="progress-bar seekBar "  style="height: 5px;background: #EC135A;" aria-valuemin="0" aria-valuemax="100"></span></div>
+                                <span class="time-calc">
+                                    <span class="curTime timer">00:00</span>
+                                    <span class="timer">/</span>
+                                    <span class="totalTime timer">00:00</span>
+                                </span>  
+                                <button class="fa fa-backward fa-2x" title="previous video"></button>
+                                <button class="fa fa-play fa-4x" title="play video"></button>
+                                <span  class="pause hidden"><button class="fa fa-pause fa-3x" title="pause video"></button></span>
+                                <button class="fa fa-forward fa-2x" title="Next video"></button>
+                                <button class="fa fa-volume-off fa-2x" title="Volume mute"></button>
+                                <button class="fa fa-volume-down fa-2x" title="volume down"></button>
+                                <button class="fa fa-volume-up fa-2x" title="volume up"></button>
+                        </div>
+                    </div>
+-->
+                    <div class="musicPlayer mx-auto col-xl-8 col-lg-8 col-md-12 col-12 order-1">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/hIFmWn3bk3Q" 
+                            frameborder="0" allow="accelerometer; autoplay; 
+                            encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <!--<video width="620" controls
+                poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg" >
+                <source
+                    src="vids/1.mp4"
+                    type="video/mp4">            
+                Your browser doesn't support HTML5 video tag.
+            </video>--> 
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/videoPlayer.js"></script>
+
+</body>
+</html>
